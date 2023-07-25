@@ -24,19 +24,6 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Tailwind customer color -->
-    <!-- <script>
-      tailwind.config = {
-        theme: {
-          backgroundColors: {
-            'bg-legal': '#B68C5A',
-          },
-          extend: {
-          },
-        },
-      };
-    </script> -->
-
     <!-- Google Fonts class -->
     <style>
       .font-poppins {
@@ -48,7 +35,7 @@
     </style>
   </head>
   <body>
-    <header class="max-w-[1170px] mx-auto font-poppins">
+    <header class="lg:max-w-[1170px] lg:mx-auto mx-10 font-poppins">
       <!-- nav bar start -->
       <div class="navbar flex flex-col lg:flex-row my-12">
         <div class="navbar-start justify-center lg:justify-start">
@@ -97,7 +84,7 @@
               et a id nisi.
             </p>
             <div>
-              <input type="text" placeholder="Search your services" class="input input-bordered w-full max-w-lg" />
+              <input type="text" placeholder="Search your services" class="input input-bordered w-full max-w-lg mb-2" />
               <button class="btn bg-[#B68C5A] text-white capitalize text-lg px-10 border-none">Search
             </div>
            
@@ -108,7 +95,7 @@
     </header>
     <main>
       <!-- Practice area start -->
-      <div class="max-w-[1170px] mx-auto font-poppins">
+      <div class="lg:max-w-[1170px] lg:mx-auto mx-10 font-poppins">
         <h1 class="text-gray-700 text-center font-garamond text-[40px] font-extrabold lg:mt-24 mt-20 lg:mb-6 mb-5">The Legal Practice Area</h1>
         <p class="text-base text-center lg:w-2/4 mx-auto mb-16">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
         <div class="practice_cards grid lg:grid-cols-3 grid-cols-1">
@@ -159,7 +146,7 @@
       <!-- Practice area end -->
 
       <!-- Clint review slider start -->
-        <div class="max-w-[1170px] mx-auto font-poppins">
+        <div class="lg:max-w-[1170px] lg:mx-auto mx-10 font-poppins">
         <h1 class="text-gray-700 text-center font-garamond text-[40px] font-extrabold lg:mt-24 mt-20 lg:mb-6 mb-5">What Our Client Say</h1>
         <p class="text-base text-center lg:w-2/4 mx-auto mb-16" >There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
           
@@ -214,13 +201,14 @@
       <!-- Clint review slider end -->
 
       <!-- FAQ section start -->
-      <div class="faq_area max-w-[1170px] mx-auto font-poppins">
-        <div class="max-w-[1170px] mx-auto font-poppins">
+      <div class="faq_area lg:max-w-[1170px] lg:mx-auto mx-10 font-poppins">
+        <div class="lg:max-w-[1170px] lg:mx-auto mx-10 font-poppins">
           <h1 class="text-gray-700 text-center font-garamond text-[40px] font-extrabold lg:mt-24 mt-20 lg:mb-6 mb-5">The Legal Practice Area</h1>
           <p class="text-base text-center lg:w-2/4 mx-auto mb-16">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
           </div>
-          <div class="faq_inner_info flex gap-8">
 
+          <!-- Faq inner info -->
+          <div class=" lg:flex gap-8">
             <div class="faq_left_accordio flex-1">
               <div class="collapse collapse-plus bg-base-200 p-6 mb-6 rounded-lg ">
                 <input type="radio" name="my-accordion-3" checked="checked" /> 
@@ -266,6 +254,54 @@
           </div>
       </div>
       <!-- FAQ section end -->
+
+      <!-- Contact Area start -->
+      <div class="faq_area lg:max-w-[1170px] lg:mx-auto mx-10       font-poppins">
+          <div class="lg:max-w-[1170px] lg:mx-auto mx-10 font-poppins">
+            <h1 class="text-gray-700 text-center font-garamond text-[40px] font-extrabold lg:mt-24 mt-20 lg:mb-6 mb-5">Contact With Us</h1>
+            <p class="text-base text-center lg:w-2/4 mx-auto mb-16">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            </div> 
+            <!-- Contact us inner info -->
+            <div class="two_column_contact_info lg:flex gap-8">
+
+              <div class="left_column flex-1 grid grid-cols-2 mb-8 lg:mb-0">
+
+                <div class="box bg-[#E7E7E7] flex flex-col justify-center items-center gap-4 p-14 border-b border-r border-[#CFCFCF]">
+                  <img class="w-[40px]" src="./images/location.png" alt="" srcset="">
+                  <h2 class="text-xl text-gray-700 font-garamond font-extrabold">Address</h2>
+                  <p>A108 Adam Street,<br>
+                    New York, NY 535022</p>
+                </div>
+                <div class="box bg-[#E7E7E7] flex flex-col justify-center items-center gap-4 p-14  border-b border-[#CFCFCF]">
+                  <img class="w-[40px]" src="./images/call.png" alt="" srcset="">
+                  <h2 class="text-xl text-gray-700 font-garamond font-extrabold">Call Us</h2>
+                  <p>+88 01750 00 00 00 <br>
+                    +88 01750 00 00 00</p>
+                </div>
+                <div class="box bg-[#E7E7E7] flex flex-col justify-center items-center gap-4 p-14 lg:border-b border-r border-[#CFCFCF] ">
+                  <img class="w-[40px]" src="./images/email.png" alt="" srcset="">
+                  <h2 class="text-xl text-gray-700 font-garamond font-extrabold">Email Us</h2>
+                  <p>info@gmail.com <br>
+                    info@gmail.com</p>
+                </div>
+                <div class="box bg-[#E7E7E7] flex flex-col justify-center items-center gap-4 p-14  ">
+                  <img class="w-[40px]" src="./images/time.png" alt="" srcset="">
+                  <h2 class="text-xl text-gray-700 font-garamond font-extrabold">Working Hours</h2>
+                  <p>Mon-Fri: 9AM to 5PM <br>
+                    Sunday: 9AM to 1 PM</p>
+                </div>
+              </div>
+            <div class="right_column flex-1">
+              <input type="text" placeholder="Your Name" class="text-base input input-bordered bg-[#E7E7E7] p-6 mb-8 border-none input-lg w-full " />
+              <input type="text" placeholder="Your Email" class="text-base input input-bordered bg-[#E7E7E7] p-6 mb-8 border-none input-lg w-full " />
+              <input type="text" placeholder="Subject" class="text-base input input-bordered bg-[#E7E7E7] p-6 mb-8 border-none input-lg w-full " />
+              <textarea placeholder="Your Message" class="text-base input input-bordered  bg-[#E7E7E7] p-6 h-[170px] mb-8 border-none w-full "name="" id="" ></textarea>
+              <button type="submit"class="text-xl  text-white input input-bordered  bg-[#B68C5A] border-none w-full ">Send Message</button>
+            </div>
+            </div>
+        </div>
+      <!-- Contact Area end -->
     </main>
+    <footer></footer>
   </body>
 </html>
