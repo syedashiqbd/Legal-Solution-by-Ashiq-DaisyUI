@@ -1,9 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Legal Solution</title>
+    <!-- Font Awesome Kit -->
+    <script
+      src="https://kit.fontawesome.com/fe577d35dc.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;800&family=Poppins:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind and DaisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind customer color -->
+    <!-- <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "bg-legal": "#B68C5A",
+            },
+          },
+        },
+      };
+    </script> -->
+
+    <!-- Google Fonts class -->
+    <style>
+      .font-poppins {
+        font-family: "Poppins", sans-serif;
+      }
+      .font-garamond {
+        font-family: "EB Garamond", serif;
+      }
+    </style>
   </head>
-  <body></body>
+  <body class="max-w-[1170px] mx-auto font-poppins">
+    <header>
+      <!-- nav bar start -->
+      <nav>
+        <div class="navbar flex flex-col lg:flex-row">
+          <div class="navbar-start justify-center lg:justify-start">
+            <img src="./images/logo2.png" alt="" srcset="" />
+          </div>
+          <div class="navbar-center">
+            <ul class="menu menu-horizontal px-1 text-gray-700 text-base">
+              <li><a>Home</a></li>
+              <li>
+                <a>Services <i class="fa-solid fa-angle-right"></i></a>
+              </li>
+              <li>
+                <a>Cases <i class="fa-solid fa-angle-right"></i></a>
+              </li>
+              <li>
+                <a>Blog <i class="fa-solid fa-angle-right"></i></a>
+              </li>
+              <li>
+                <a>Contact Us <i class="fa-solid fa-angle-right"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-end justify-center lg:justify-end">
+            <a class="btn bg-[#B68C5A] text-white capitalize text-lg"
+              >Free Consultation</a
+            >
+          </div>
+        </div>
+      </nav>
+      <!-- nav bar end -->
+
+      <!-- banner start -->
+      <div class="banner"></div>
+      <!-- banner end -->
+    </header>
+  </body>
 </html>
